@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poopins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #080808;
+    color: white;
+}
+p{
+    color:white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/586eb043170000250092858b.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8 ;
+}
+.logo {
+    width: 200px;
+    height: 100px;
+}
+.container {
+    padding: 10px 10%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.main_text{
+    margin-top: 10%;
+    font-size: 20px;
+}
+.main_text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.main_text h1 span{
+    color: red;
+}
+#about{
+    color: #ababab;
+}
+#about{
+    color: #ababab;
+}
+.container{
+    align-items: center;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+}
+
+.about_col_1{
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.about_col_2{
+    border: 20px;
+    margin-top: 100px;
+    padding-left: 100px;
+    width: 500px;
+    height: 400px;
+    flex-basis: 60%;
+
+}
+.elon_info{
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    opacity: 0.7;
+}
+.subtitle{
+    font-weight: 600;
+    font-size: 60px;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right:50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    color:white;
+}
+.tab-contents ul li span{
+    color:#b54769;
+    font-size:14px
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 10px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    border-right:10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div h2{
+    font-family: 'Poopins' , sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+.portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 10px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    display: block;
+    width: 100%;
+    height: 350px;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2) , gray);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+    margin-right: 15px;
+}
+.contact-left p svg{
+    margin-right: 20px;
+    color: #ff004f;
+}
+.fa-paper-plane{
+   margin-right: 10px;
+    font-size: 25px;
+}
+#mobile-phone{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+}
+.btn.btn2{
+    display: inline-block;
+}
+.btn.btn3{
+    display: inline-block;
+    background-color: #ff004f;
+}
+.contact-right form{
+    width: 100%
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 15px;
+}
+form .btn3{
+    padding: 14px 60px;
+    font-size:18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    font-size: 12px;
+    font-family: 'Rockwell' ,sans-serif;
+    margin-top: 20px;
+}
+.nav svg{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    #header{
+        background-image: url("../img/586eb043170000250092858b.jpeg");
+    }
+    .main_text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .main_text h1{
+        font-size: 30px;
+    }
+    .nav svg{
+        display: block;
+        font-size: 25px;
+    }
+    .nav ul{
+        background: #ff004f;
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 700px;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    .nav ul li{
+        display: block;
+        margin: 25px
+    }
+    .nav ul svg{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer
+    }
+    .row{
+        display: inline-block;
+    }
+    .elon_info{
+        width: 300px;
+        height: 300px;
+    }
+    .about_col_2{
+        padding-left: 0px;
+        width: 300px;
+        height: 300px;
+    }
+    .subtitle{
+     font-size: 40px;
+    }
+    .contact-left p{
+        width: 300px;
+    }
+    .work{
+        height: 300px;
+    }
+}

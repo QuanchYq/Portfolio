@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c95d1b22db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav class="nav">
+        <img src="img/tesla-9.svg" class="logo">
+        <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="CloseMenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="OpenMenu()"></i>
+    </nav>
+    <div class="main_text">
+            <p>CEO of Tesla</p>
+        <h1>Hi, I'm <span>Elon</span> <br>Musk</h1>
+    </div>
+</div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about_col_1">
+                <img src="img/474ce8fa7b2ff9d01281048d4aca4935.jpg" class="elon_info">
+            </div>
+            <div class="about_col_2">
+                <h1 class="subtitle">About me</h1>
+                <p>Elon Musk is currently the CEO and CTO of SpaceX, CEO and Product Architect of Tesla Motors and Chairman of SolarCity. Musk is best known for having created the first viable production electric car of the modern era (Tesla Roadster), for designing a private successor to the Space Shuttle (F9/Dragon) and creating the world's largest Internet payment system (PayPal).</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills',0)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience',1)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education',2)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Tesla/SpaceX</span><br>Making high-level cars and rockets</li>
+                        <li><span>PayPal</span><br>Fast paying process App</li>
+                        <li><span>DogeCoin</span><br>Investments</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022-c.y</span><br>Owner/Investor of Twitter</li>
+                        <li><span>2003-c.y</span><br>Investor and 30% owner of shares</li>
+                        <li><span>1995-2000</span><br>PayPal owner</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Master</span><br>University of Pretoria</li>
+                        <li><span>Bachelor</span><br>Queen's University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-car"></i>
+                <h2>Electric cars</h2>
+                <p>Tesla uses a version of these cells that is designed to be cheaper to manufacture and lighter than standard cells by removing some safety features; according to Tesla, these features are redundant because of the advanced thermal management system and an intumescent chemical in the battery to prevent fires</p>
+                <a href="https://www.tesla.com/">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-space-shuttle"></i>
+                <h2>Rockets</h2>
+                <p>Developing Starship, a privately funded, fully reusable, super heavy-lift launch system for interplanetary and orbital spaceflight.</p>
+                <a href="https://www.spacex.com/">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-network-wired"></i>
+                <h2>Starlink</h2>
+                <p>SpaceX intends to provide satellite internet connectivity to underserved areas of the planet, as well as provide competitively priced service in more urbanized areas. The company has stated that the positive cash flow from selling satellite internet services would be necessary to fund their Mars plans.Furthermore, SpaceX has long-term plans to develop and deploy a version of the satellite communication system to serve Mars.</p>
+                <a href="https://www.starlink.com/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://www.carsinvasion.com/img_downloader.php?show_image=2015-larte-tesla-model-s-elizabeta/2015-larte-tesla-model-s-elizabeta-04.jpg" alt="Tesla-Car">
+                <div class="layer"></div>
+            </div>
+            <div class="work">
+                <img src="img/SpaceX.jpg" alt="SpaceX">
+                <div class="layer"></div>
+            </div>
+            <div class="work">
+                <img src="https://mediasat.info/wp-content/uploads/2020/02/starlink-06.jpg" alt="StarLink">
+                <div class="layer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i>aikyn.baurzhanovich99@gmail.com</p>
+                <p><i class="fas fa-mobile-alt" id="mobile-phone"></i> 87056780226</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/TheElonmusk/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/elonmusk"><i class="fab fa-telegram"></i></a>
+                    <a href="https://twitter.com/elonmusk"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="cv/Urazalinov%20Aikyn%20Baurzhanovich.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aikyn 2022</p>
+    </div>
+</div>
+<script src="js/Name.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby-hW0mUPO3grStP4_zT4BzLKoqWshDV5jiVaLxdFhd4acS6RzqanxWS-zEUgetwTg/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
